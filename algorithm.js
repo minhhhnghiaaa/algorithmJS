@@ -64,7 +64,13 @@ function abbrevName(name) {
     return name.split(" ").map(el => el[0].toUpperCase()).join(".")
 }
 
-function highAndLow(numbers){
+function highAndLow(numbers) {
     const nums = numbers.split(" ")
     return `${Math.max(...nums)} ${Math.min(...nums)}`;
-  }
+}
+
+function openOrSenior(data) {
+    const membership = member => member[0] >= 55 && member[1] > 7 ? "Senior" : "Open"
+
+    return data.map(membership)
+}
