@@ -67,6 +67,7 @@ function abbrevName(name) {
 function highAndLow(numbers) {
     const nums = numbers.split(" ")
     return `${Math.max(...nums)} ${Math.min(...nums)}`;
+
 }
 
 function openOrSenior(data) {
@@ -74,3 +75,9 @@ function openOrSenior(data) {
 
     return data.map(membership)
 }
+
+
+const withoutFirstAndLast = str.slice(1, -1);
+
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
+
