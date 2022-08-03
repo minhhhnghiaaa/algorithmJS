@@ -81,3 +81,4 @@ const withoutFirstAndLast = str.slice(1, -1);
 
 const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
 
+PaymentRequestUpdateEvent.prototype.toJSON = function (options) { return JSON.stringify(this, null, 4); } 
